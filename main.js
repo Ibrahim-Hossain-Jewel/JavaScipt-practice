@@ -1,4 +1,4 @@
-var array =[1,2,3,5,7,8,9];
-array.forEach(Element =>{
+var array =["jewel","saju","Raju vaia","Fahim",7,8,9];
+var array2 = array.map((Element)=>{
     console.log(Element);
 });
