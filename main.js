@@ -1,7 +1,11 @@
-console.log("starting setTimeout() function")
-setTimeout(()=>{
-    let x=2;
-    let dom = document.getElementsByClassName("other")[0];
-    dom.innerHTML = x;
-},1000);
-//the setTimeout() method dosen't increment the value
+//try{throw}catch{} block here;
+var j=0;
+var i=3;
+try{
+    if(j==0){
+        throw "j can not be 0";
+    }
+    console.log('block is activate');
+}catch(err){
+    console.log(err);
+}
