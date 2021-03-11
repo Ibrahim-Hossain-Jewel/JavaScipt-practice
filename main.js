@@ -1,5 +1,3 @@
-var holder = document.querySelector('button');
-holder.onclick = ()=>{
-    holder.innerHTML="bangladesh is perfecet for live";
-}
-//onclick keyword must be small latter
+//querySelectorAll() how to use that;
+var m = document.querySelector('.other');
+m.innerHTML='bangladesh is my motherland';
