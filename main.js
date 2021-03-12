@@ -9,3 +9,4 @@ btn.addEventListener('click',()=>{
     //here let has bracket scope;
     output.innerHTML = holder;
 });
+//the addEventListener() method is better than on click;
