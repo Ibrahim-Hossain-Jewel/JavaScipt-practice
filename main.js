@@ -1,13 +1,25 @@
-var btn = document.querySelector('button');
-var cost = document.querySelector('input');
-var output = document.querySelector('h2');
-//these are has global access right now;
-//but the the var variable declaration is function scoped;
-output.innerText='The maximum fractional part is two';
-btn.addEventListener('click',()=>{
-    let holder = (cost.value);
-    //here let has bracket scope;
-    output.innerHTML = `<h1>The provided Bangladeshi money is ${holder} and in USD ${((1/80)*holder).toFixed(2)} $ Thank's for used me!</h1>`;
-});
-//templating format in javascript;
-//the addEventListener() method is better than on click;
+//Declare all variable using const;
+const score = document.querySelector('.score');
+const startscreen = document.querySelector('.startscreen');
+const gamearea = document.querySelector('.gamearea');
+//Declare an keyboard press arrowkey;
+var keys = {
+    LeftArrow:false,Uparrow:false,Rightarrow:false,Downarrow:false
+}
+startscreen.addEventListener('click',start);
+//keypress addEventListener();
+document.addEventListener('keydown',pressOn);
+document.addEventListener('keyup',pressOff);
+function start(){
+   console.log('clicked');
+}
+function pressOn(e){
+    e.preventDefault();//Removed default value now set new value
+    keys[e.key] = true;
+    console.log(keys);
+}
+function pressOff(e){
+    e.preventDefault();
+    keys[e.key]=true;
+    console.log(keys);
+}
